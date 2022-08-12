@@ -71,7 +71,7 @@ public class GameController : MonoBehaviour {
 
 		cam.transform.position = Vector3.Lerp (cam.transform.position, posCam, speedCam * Time.deltaTime);
 
-		//parou aula 8
+		//parou aula 8	
 
 	}
 
