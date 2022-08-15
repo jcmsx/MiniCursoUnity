@@ -58,6 +58,7 @@ public class playerController : MonoBehaviour {
 
 		if (Input.GetButtonDown ("Jump") && isGrounded == true) {
 
+			_GameController.playSFX (_GameController.sfxJump, 0.5f);
 			playerRb.AddForce( new Vector2(0,jumpForce));
 
 		}
@@ -65,6 +66,7 @@ public class playerController : MonoBehaviour {
 		if (Input.GetButtonDown ("Fire1") && isAtack == false) {
 		
 			isAtack = true;
+			_GameController.playSFX (_GameController.sfxAtack, 0.5f);
 			playerAnimator.SetTrigger ("atack");
 		}
 	
@@ -108,6 +110,14 @@ public class playerController : MonoBehaviour {
 		Destroy (hitBoxTemp, 0.2f);
 
 	}
+
+
+	void footStep()
+		{
+		_GameController.playSFX(_GameController.sfxStep[Random.Range(0, _GameController.sfxStep.Length)], 1f);
+	}
+
+
 }
 
 

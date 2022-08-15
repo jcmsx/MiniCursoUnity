@@ -12,6 +12,16 @@ public class GameController : MonoBehaviour {
 
 	public Transform limiteCamEsq, limiteCamDir, limiteCamSup, limiteCamBaixo;
 
+
+	[Header("Audio")]
+	public AudioSource sfxSource;
+	public AudioSource musicSource;
+
+	public AudioClip sfxJump;
+	public AudioClip sfxAtack;
+	public AudioClip[] sfxStep;
+
+
 	// Use this for initialization
 	void Start () {
 
@@ -75,6 +85,12 @@ public class GameController : MonoBehaviour {
 
 	}
 
+	public void playSFX(AudioClip sfxClip, float volume)
+
+	{
+		sfxSource.PlayOneShot (sfxClip, volume);
+
+	}
 
 }
 
