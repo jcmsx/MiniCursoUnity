@@ -19,7 +19,10 @@ public class GameController : MonoBehaviour {
 
 	public AudioClip sfxJump;
 	public AudioClip sfxAtack;
+	public AudioClip sfxCoin;
+	public AudioClip sfxEnemyDead;
 	public AudioClip[] sfxStep;
+
 
 
 	// Use this for initialization

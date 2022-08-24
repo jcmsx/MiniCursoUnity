@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\slimeIA.cs">
     <Files>
-      <File FileName="Assets\Scripts\playerController.cs" Line="117" Column="102" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="94" Column="2" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="55" Column="1" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="21" Column="28" />
       <File FileName="Assets\Scripts\Parallax.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\slimeIA.cs" Line="99" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -86,6 +86,24 @@ public class playerController : MonoBehaviour {
 
 	}
 
+	void OnTriggerEnter2D(Collider2D col){
+		
+		if (col.gameObject.tag == "Coletavel") {
+
+			_GameController.playSFX (_GameController.sfxCoin, 2.5f);
+			Destroy (col.gameObject);
+
+		} else if (col.gameObject.tag == "damage") {
+
+			print ("Dano");
+		}
+
+	}
+
+
+
+	//funções operador
+
 	void Flip()
 	{
 
